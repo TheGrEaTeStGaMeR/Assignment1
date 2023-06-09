@@ -10,6 +10,7 @@ Student ID: 301280909
 const express = require('express');
 const app = express();
 const path = require('path');
+const port = process.env.PORT || 3000; // Use the dynamic port assigned by Heroku or 3000 as fallback
 
 // Serve static files from the public directory
 app.use(express.static(path.join(__dirname, 'public')));
